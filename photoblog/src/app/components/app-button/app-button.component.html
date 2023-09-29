@@ -1,1 +1,17 @@
-<p>app-button works!</p>
+<button mat-button color="color" *ngIf="type === 'basic'" attr.data-aos="{{animation}}">{{text}}</button>
+
+<button mat-raised-button color="color" *ngIf="type === 'raised'" attr.data-aos="{{animation}}">{{text}}</button>
+
+<button mat-flat-button color="color" *ngIf="type === 'flat'" attr.data-aos="{{animation}}">{{text}}</button>
+
+<button mat-icon-button color="color" *ngIf="type === 'icon'" attr.data-aos="{{animation}}">
+  <mat-icon>{{icon}}</mat-icon>
+</button>
+
+<button mat-fab color="color" *ngIf="type === 'fab'" attr.data-aos="{{animation}}">
+  <mat-icon>{{icon}}</mat-icon>
+</button>
+
+<button mat-mini-fab color="color" *ngIf="type === 'mini-fab'" attr.data-aos="{{animation}}">
+  <mat-icon>{{icon}}</mat-icon>
+</button>
